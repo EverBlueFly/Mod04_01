@@ -14,7 +14,7 @@
     <div> 
         @{ 
             int m = 10;
-            string s = "<h1>demo</1>";
+            string s = "<h1>demo</h1>";
             string[] data = { "it1", "it2", "it3" };
         }
         <ul>
@@ -29,6 +29,20 @@
                 <li>@data[i]</li>
             }
         </ul>
+        @*foreach*@
+        <ul>
+            @foreach(var it in data)
+            {
+                <li>@it</li>
+            }
+        </ul>
+        @*If*@
+        @if (true)
+        {
+            @m
+            <text>@m</text>
+            @:@m
+}
     </div>
 </body>
 </html>
