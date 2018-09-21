@@ -12,6 +12,16 @@
 </head>
 <body>
     <div> 
+        @{ 
+            int m = 10;
+            string s = "<h1>demo</1>";
+            string[] data = { "it1", "it2", "it3" };
+        }
+        <ul>
+            <li>不用轉字串 @m</li>
+            <li>自動做HtmlEncode @s</li>
+            <li>不做HtmlEncode @Html.Raw(s)</li>  <!--Html.Raw 表示直接顯示原始內容 不另外做處理-->
+        </ul>
     </div>
 </body>
 </html>
